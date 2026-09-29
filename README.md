@@ -45,6 +45,8 @@ variables de entorno; sin credenciales el pipeline funciona solo con el clasific
 
 ## Demo web sin servidor (GitHub Pages)
 
+**Pruébalo:** https://guillermoromos.github.io/TableroVoz/
+
 La carpeta `docs/` es la misma web accesible (`web/`) pero ejecuta el backend Python **dentro del navegador** con [Pyodide](https://pyodide.org): `pyodide-shim.js` intercepta `/api/recognize` y `/api/describe` y llama a `docs/py/web_bridge.py`, que usa los mismos módulos de `tablerovoz/`. Así se puede abrir desde un simple HTML publicado en GitHub Pages (Settings → Pages → Branch `main`, carpeta `/docs`).
 
 - Primera carga: 20–40 s (descarga numpy, OpenCV y scikit-learn para WebAssembly).
