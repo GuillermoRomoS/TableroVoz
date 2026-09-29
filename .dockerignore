@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+data/
+models/
+tests/
+.git/
+.kiro/
+# El hold-out NUNCA entra en la imagen (R31).
+samples/holdout/
+*.md

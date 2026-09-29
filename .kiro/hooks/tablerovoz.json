@@ -1,0 +1,42 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "tests-on-describe-change",
+      "trigger": "PostFileSave",
+      "matcher": "tablerovoz/(describe|validate)\\.py$",
+      "action": { "type": "command", "command": "python -m pytest -q tests" },
+      "timeout": 60
+    },
+    {
+      "name": "eval-on-recognition-change",
+      "trigger": "PostFileSave",
+      "matcher": "tablerovoz/(board|tiles|fuse)\\.py$",
+      "action": { "type": "command", "command": "python eval.py --quick" },
+      "timeout": 120
+    },
+    {
+      "name": "tests-on-task-complete",
+      "trigger": "PostTaskExecution",
+      "action": { "type": "command", "command": "python -m pytest -q" },
+      "timeout": 180
+    },
+    {
+      "name": "log-kiro-usage",
+      "trigger": "PostTaskExecution",
+      "action": {
+        "type": "agent",
+        "prompt": "Añade una línea a KIRO-LOG.md con: hora, tarea completada, qué hizo Kiro, qué tuvimos que corregir o depurar y, si existe, la última precisión de eval.py. Máximo 2 líneas."
+      }
+    },
+    {
+      "name": "a11y-review-web",
+      "trigger": "PostFileSave",
+      "matcher": "web/.*\\.(html|js)$",
+      "action": {
+        "type": "agent",
+        "prompt": "Revisa el archivo contra .kiro/steering/accessibility.md (aria-live, foco al resultado, tabla con th scope, labels, texto en vez de color). Corrige solo fallos claros."
+      }
+    }
+  ]
+}

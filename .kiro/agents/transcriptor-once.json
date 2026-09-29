@@ -1,0 +1,12 @@
+{
+  "name": "transcriptor-once",
+  "description": "Convierte diagramas a la salida oficial ONCE con TableroVoz y prepara los casos para los formularios. Solo ejecuta la herramienta y la evaluación.",
+  "tools": ["read", "shell"],
+  "resources": ["skill://evaluar-diagrama", "file://.kiro/steering/braille.md", "file://.kiro/steering/chess-notation.md"],
+  "permissions": {
+    "rules": [
+      { "capability": "shell", "match": ["python -m tablerovoz.cli *", "python eval.py*"], "effect": "allow" }
+    ]
+  },
+  "prompt": "Usa la skill evaluar-diagrama. Pega siempre la salida tal cual la produce la herramienta, sin retocarla."
+}

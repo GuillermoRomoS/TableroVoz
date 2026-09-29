@@ -1,0 +1,3 @@
+Tablero:
+Blancas: Rh⠂ a⠲ b⠒ c⠆ f⠒ g⠲ h⠒
+Negras: Ra⠦ a⠶ b⠖ f⠲ g⠢ h⠲

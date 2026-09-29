@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TableroVoz — diagrama de ajedrez accesible</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>TableroVoz</h1>
+    <p>Convierte la imagen de un diagrama de ajedrez en una descripción accesible:
+       notación de la ONCE en audio y en braille, más un tablero navegable.</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="subir-h">
+      <h2 id="subir-h">1. Subir el diagrama</h2>
+      <form id="form-recognize">
+        <p>
+          <label for="imagen">Imagen del diagrama (PNG o JPG)</label><br />
+          <input type="file" id="imagen" name="image" accept="image/png,image/jpeg" required />
+        </p>
+
+        <fieldset>
+          <legend>Turno (obligatorio)</legend>
+          <label><input type="radio" name="turn" value="w" checked /> Juegan blancas</label>
+          <label><input type="radio" name="turn" value="b" /> Juegan negras</label>
+        </fieldset>
+
+        <p>
+          <label>
+            <input type="checkbox" id="flipped" name="flipped" /> Tablero girado (blancas arriba)
+          </label>
+        </p>
+
+        <button type="submit" id="btn-recognize">Reconocer el diagrama</button>
+      </form>
+    </section>
+
+    <!-- Región de anuncios para lector de pantalla (R02). -->
+    <p id="estado" role="status" aria-live="polite" class="estado"></p>
+
+    <section aria-labelledby="posicion-h" id="resultado" hidden>
+      <h2 id="posicion-h" tabindex="-1">Posición</h2>
+
+      <h3>Descripción en audio (formato ONCE)</h3>
+      <p id="audio-texto" class="salida"></p>
+      <p>
+        <button type="button" id="btn-voz">Leer en voz alta</button>
+        <button type="button" id="btn-parar-voz">Parar</button>
+        <button type="button" id="btn-filas">Leer por filas</button>
+      </p>
+
+      <h3>Braille (formato ONCE / Ebrai)</h3>
+      <pre id="braille-texto" class="salida braille"></pre>
+      <p>
+        <button type="button" id="btn-copiar-braille">Copiar braille</button>
+        <button type="button" id="btn-descargar-braille">Descargar .txt</button>
+      </p>
+
+      <h3>FEN</h3>
+      <p><code id="fen-texto" class="salida"></code></p>
+      <p><button type="button" id="btn-copiar-fen">Copiar FEN</button></p>
+
+      <h3 id="dudas-h">Avisos</h3>
+      <p id="dudas-texto" class="salida"></p>
+
+      <h3>Tablero navegable</h3>
+      <div id="tabla-wrap" role="region" aria-label="Tablero 8 por 8"></div>
+
+      <h3>Consultar una casilla</h3>
+      <form id="form-consulta">
+        <label for="casilla">Escribe una casilla, por ejemplo e4</label>
+        <input type="text" id="casilla" name="casilla" maxlength="2" size="3"
+               autocomplete="off" pattern="[a-hA-H][1-8]" />
+        <button type="submit">Consultar</button>
+      </form>
+      <p id="consulta-resultado" role="status" aria-live="polite" class="salida"></p>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/pyodide/v314.0.7/full/pyodide.js"></script>
+  <script src="pyodide-shim.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

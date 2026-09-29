@@ -1,0 +1,197 @@
+Adaptación a Braille
+
+La signografía utilizada se basa en el Documento técnico B8 Documentos técnicos relacionados con el Braille - Web ONCE de la Comisión Braille Española, ajustada a la representación que utiliza el libro original.
+
+La notación no distingue entre la posición de las piezas blancas y la de las negras a la hora de anotar las jugadas. Por tanto, las casillas se denominan y numeran igual para ambos jugadores.
+
+El tablero está leído como un eje de coordenadas.
+
+-   Las columnas se representan por las ocho primeras letras del alfabeto. Según esto, de izquierda a derecha, tendremos: a, b, c, d, e, f, g y h.
+
+-   Las filas se representan en braille por un número en posición baja, del 1 al 8, comenzando desde la posición de las blancas.
+
+  Equivalencias de símbolos para los números en posición baja:
+
+  1 ⠂
+
+  2 ⠆
+
+  3 ⠒
+
+  4 ⠲
+
+  5 ⠢
+
+  6 ⠖
+
+  7 ⠶
+
+  8 ⠦
+
+Las piezas de ajedrez:
+
+R Rey
+
+D Dama
+
+A Alfil
+
+C Caballo
+
+T Torre
+
+P Peón
+
+En determinadas representaciones de tableros, algunas casillas aparecen resaltadas, en rojo o en amarillo, para distinguirlas. Estas se escribirán por separado indicando en cada caso su color.
+
+Asimismo, en los diagramas de los tableros, en ocasiones se muestran flechas que unen casillas. En la transcripción se indicarán las casillas que estén afectadas unidas mediante la flecha ⠒⠕ o ⠪⠒ dependiendo de la dirección de la misma.
+
+Ej.
+
+  Re⠂
+
+  Rey, columna e, fila 1
+
+Ebrai
+
+El software que se utiliza para adaptar los libros en braille es el Ebrai. Se puede descargar en:
+
+Ebrai - CTI - Centro de Tiflotecnología e Innovación de la ONCE
+
+[]Tablero 1: 
+
+Adaptación 1: 
+
+Tablero:
+
+Blancas: Re⠂ Dd⠂ Ta⠂ Th⠂ Cc⠒ Cf⠒ Ac⠲ Ag⠒ Pa⠆ Pb⠆ Pc⠆ Pd⠒ Pe⠲ Pf⠆ Pg⠆ Ph⠆
+
+Negras: Re⠦ Dd⠦ Ta⠦ Th⠦ Cc⠖ Cf⠖ Ac⠢ Ac⠦ Pa⠶ Pb⠶ Pc⠶ Pd⠖ Pe⠢ Pf⠶ Pg⠢ Ph⠖
+
+)Resaltadas en amarillo las casillas g⠒ y h⠲(
+
+o
+
+Tablero:
+
+Blancas: Re⠂ Dd⠂ Ta⠂ Th⠂ Cc⠒ Cf⠒ Ac⠲ Ag⠒ a⠆ b⠆ c⠆ d⠒ e⠲ f⠆ g⠆ h⠆
+
+Negras: Re⠦ Dd⠦ Ta⠦ Th⠦ Cc⠖ Cf⠖ Ac⠢ Ac⠦ a⠶ b⠶ c⠶ d⠖ e⠢ f⠶ g⠢ h⠖
+
+)Resaltadas en amarillo las casillas g⠒ y h⠲(
+
+[]Tablero 2: 
+
+Adaptación 2: 
+
+Tablero:
+
+Blancas: Re⠂ Dd⠂ Ta⠂ Th⠂ Cc⠒ Af⠂ Af⠲ a⠆ b⠆ c⠆ e⠲ f⠆ g⠆ h⠆
+
+Negras: Re⠦ Dd⠦ Ta⠦ Th⠦ Cg⠲ Ac⠦ Af⠦ a⠶ b⠶ d⠖ e⠢ f⠶ g⠶ h⠶
+
+)Resaltadas en amarillo las casillas d⠂ y d⠲
+
+Desde la casilla d⠲ sale una flecha que une con la casilla d⠂ d⠲¬⠒⠕¬d⠂(
+
+Tablero 3: 
+
+[]
+
+Adaptación 3: 
+
+Tablero:
+
+Blancas: Re⠂ Dd⠂ Ta⠂ Th⠂ Cb⠂ Cf⠒ Af⠂ Ag⠢ a⠆ b⠆ c⠲ d⠲ e⠆ f⠆ g⠆ h⠆
+
+Negras: Re⠦ Dd⠦ Ta⠦ Th⠦ Cb⠦ Cf⠖ Ac⠦ Af⠦ a⠶ b⠶ c⠶ d⠶ e⠖ f⠢ g⠶ h⠖
+
+)Resaltadas en amarillo las casillas h⠶¬⠒⠕¬h⠖(
+
+[]Tablero 4:
+
+Adaptación 4:
+
+Tablero:
+
+Blancas: Rh⠂ a⠲ b⠒ c⠆ f⠒ g⠲ h⠒
+
+Negras: Ra⠦ a⠶ b⠖ f⠲ g⠢ h⠲
+
+Tablero 5:
+
+[]
+
+Adaptación 5:
+
+Tablero:
+
+Blancas: Rg⠂ Dd⠒ Tc⠂ Cd⠆ Ch⠢ Ac⠒ c⠲ d⠢ e⠲ g⠆ h⠒
+
+Negras: Rg⠦ Db⠦ Ta⠆ Tb⠖ Ad⠖ Ad⠶ c⠢ e⠢ f⠖ f⠶ h⠖
+
+)Resaltadas en amarillo las casillas: g⠒ y h⠢ y, en rojo, f⠖
+
+c⠂¬⠒⠕¬f⠂
+
+d⠒¬⠒⠕¬g⠒
+
+h⠢¬⠒⠕¬f⠖(
+
+Tablero 6:
+
+[]
+
+Adaptación 6:
+
+Tablero:
+
+Blancas: Rg⠂ Dd⠂ Ta⠂ Te⠂ Cd⠆ Cf⠒ Ac⠂ Ac⠆ b⠲ c⠒ d⠢ e⠲ f⠆ g⠆ h⠒
+
+Negras: Rg⠦ Dc⠶ Tb⠦ Tf⠦ Cb⠶ Cf⠖ Ac⠦ Ae⠶ b⠢ c⠢ d⠖ e⠢ f⠶ g⠶ h⠶
+
+)Resaltadas en amarillo las casillas b⠶ y d⠦ y, en rojo, la casilla c⠂.
+
+Desde la casilla d⠆ ocupada por el caballo salen flechas hacia las casillas b⠂ b⠒ y f⠂(
+
+Ejemplos de adaptación a Audio
+
+[]
+
+Pág. 15
+
+Diagrama 1:
+
+Blancas: Rey en E2, Dama en A4, Torres en C1 y H1, Alfil en B5, Caballos en C3 y F3, Peones en A2, B2, D2, F2, G2 y H2.
+
+Negras: Rey en E8, Dama en D7, Torres en A8 y H8, Alfiles en F8 y G4, Caballo en C6, Peones en A7, B7, C5, E7, F7, G7 y H7.
+
+[]
+
+Pág. 17
+
+Diagrama 2:
+
+Blancas: Rey en D2, Alfil en H6, Caballo en E1, Peones en A3, B2, G2 y H3.
+
+Negras: Rey en E6, Alfil en C4, Caballo en C6, Peones en B7, B6, D5, G6 y H7.
+
+[]
+
+Pág. 24
+
+Diagrama 5:
+
+Blancas: Rey en G1, Dama en D1, Torres en A1 y E1, Alfiles en B3 y C1; Caballos en B1 y F3, Peones en A2, B2, C3, D4, E4, F2, G2 y H2.
+
+Negras: Rey en G8, Dama en D8, Torres en A8 y F8, Alfiles en E7 y C4, Caballos en A6 y F6, Peones en A6, B5, C7, D6, E5, F7, G7 y H7.
+
+[]
+
+Pág. 44
+
+Diagrama 23:
+
+Blancas: Rey en H3, Dama en F5, Torre en F1, Caballo en E2, Peones en A6, C4, D5, G3 y G4.
+
+Negras: Rey en H7, Dama en G6, Torre en E7, Alfil en E3, Peones en A7, C5, E4, G5 y H6.

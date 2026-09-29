@@ -1,0 +1,26 @@
+{
+ "highlights": {
+  "amarillo": [
+   "g3",
+   "h5"
+  ],
+  "rojo": [
+   "f6"
+  ]
+ },
+ "arrows": [
+  [
+   "c1",
+   "f1"
+  ],
+  [
+   "d3",
+   "g3"
+  ],
+  [
+   "h5",
+   "f6"
+  ]
+ ],
+ "source": "docx ONCE (adaptación braille oficial)"
+}

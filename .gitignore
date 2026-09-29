@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+data/
+_probe*.py
+_warp*.png
+FORMULARIOS.md
+CHULETA-AJEDREZ.md
