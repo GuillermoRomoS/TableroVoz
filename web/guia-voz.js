@@ -106,7 +106,7 @@
       if (clave === ultimoTexto) return;
       ultimoTexto = clave;
       ultimo = null;
-      const texto = bloque ? recortar(bloque.textContent) + "." : "Zona sin controles.";
+      const txt = bloque ? recortar(bloque.textContent) : ""; const texto = bloque ? (/[.!?…:]$/.test(txt) ? txt : txt + ".") : "Zona sin controles.";
       decir(texto + indicacion(x, y));
     }, 700);
   });
