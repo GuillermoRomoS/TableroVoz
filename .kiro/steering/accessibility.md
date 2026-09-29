@@ -10,3 +10,4 @@ R04. Campo "Consultar casilla" con `label`: escribir "e4" responde "En E4 hay un
 R05. Ninguna información solo visual: las dudas, colores y flechas se dicen con texto.
 R06. HTML semántico, un solo `h1`, botones con texto, foco visible, contraste ≥ 7:1, zoom 200 %.
 R07. Estados y errores se anuncian en frases cortas y dicen qué hacer ("No encuentro el tablero. Recorta la imagen al diagrama.").
+R36. Guía por voz opcional (desactivada por defecto, Alt+G): lee el control con foco o bajo el ratón para personas con baja visión o sin lector de pantalla; nunca activa por defecto para no pisar a NVDA/Narrador/VoiceOver.

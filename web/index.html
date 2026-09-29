@@ -11,6 +11,10 @@
     <h1>TableroVoz</h1>
     <p>Convierte la imagen de un diagrama de ajedrez en una descripción accesible:
        notación de la ONCE en audio y en braille, más un tablero navegable.</p>
+    <p>
+      <button type="button" id="btn-guia" aria-pressed="false" aria-describedby="guia-ayuda">Activar guía por voz</button>
+      <span id="guia-ayuda" class="ayuda">Lee en voz alta cada botón al pasar el ratón o al pulsar Tabulador (Alt+G). Si ya usas un lector de pantalla, no hace falta.</span>
+    </p>
   </header>
 
   <main>
@@ -80,6 +84,7 @@
     </section>
   </main>
 
+  <script src="guia-voz.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

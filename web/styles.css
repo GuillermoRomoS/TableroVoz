@@ -88,3 +88,7 @@ table.tablero td.dark { background: var(--dark-sq); color: #fff; }
 table.tablero td.dudoso { outline: 3px solid var(--dudoso); }
 
 .dudoso-txt { color: var(--dudoso); font-weight: bold; }
+
+/* Guía por voz */
+#btn-guia[aria-pressed="true"] { outline: 3px solid currentColor; font-weight: 700; }
+.ayuda { display: block; font-size: 0.95rem; margin-top: 0.3rem; }
