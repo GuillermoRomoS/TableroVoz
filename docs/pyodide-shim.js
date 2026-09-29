@@ -31,7 +31,7 @@ function jsonResponse(text) {
   return new Response(JSON.stringify(data), { status, headers: { "Content-Type": "application/json" } });
 }
 window.fetch = async (input, init = {}) => {
-  const url = typeof input === "string" ? input : input.url;
+  const url = input instanceof Request ? input.url : String(input);
   if (url.endsWith("/api/recognize")) {
     const { bridge } = await pyReady;
     const fd = init.body;
